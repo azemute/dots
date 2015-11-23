@@ -1,15 +1,19 @@
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
+"" vundle configuration
+
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'sheerun/vim-polyglot'
-
+Bundle 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 filetype plugin indent on
+
+"" general configuration
 
 set nocompatible
 set tabstop=4
@@ -27,8 +31,19 @@ set autoindent
 set formatoptions=c,q,r,t
 set ruler
 set background=dark
+set laststatus=2
+
+"" split behaviour changes
+set splitbelow
+set splitright
+
+"" final stuff
 
 filetype plugin indent on
 syntax on
-colorscheme desert
+set background=dark
+colorscheme solarized
 
+"" special config options
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
