@@ -47,3 +47,5 @@ colorscheme solarized
 "" special config options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+nnoremap <silent> <F5> :!clear;python3 %<CR>
