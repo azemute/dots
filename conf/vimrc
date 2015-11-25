@@ -57,4 +57,4 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " special keymapping
-nnoremap <silent> <F9> :!clear;python3 %<CR>
+nnoremap <silent> <F9> :!clear;!./% <CR>
