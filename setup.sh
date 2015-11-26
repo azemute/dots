@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 
 #
 BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
