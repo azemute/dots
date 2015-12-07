@@ -10,6 +10,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/pep8'
 call vundle#end()            " required
@@ -32,7 +33,6 @@ set backspace=2
 set autoindent
 set formatoptions=c,q,r,t
 set ruler
-set background=dark
 set laststatus=2
 set foldmethod=indent
 set foldlevel=99
@@ -49,8 +49,10 @@ set splitright
 
 filetype plugin indent on
 syntax on
-set background=dark
-colorscheme solarized
+let base16colorspace=256
+"" colorscheme base16-atelierdune
+"" set background=dark
+colorscheme base16-apathy 
 
 "" special config options
 let g:airline#extensions#tabline#enabled = 1
