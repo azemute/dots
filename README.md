@@ -1,7 +1,7 @@
 Azemute's Dots
 ==============================
 
-zsh && git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.dots"
+zsh && git clone --recursive https://github.com/azemute/dots.git "${ZDOTDIR:-$HOME}/.dots"
 
 ./dots/setup.sh
 
