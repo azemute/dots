@@ -15,3 +15,5 @@ fi
 # Customize to your needs...
 VISUAL="vim"
 EDITOR="vim"
+
+PATH="$PATH:/home/zac/.gem/ruby/2.2.0/bin"
