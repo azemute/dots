@@ -9,11 +9,8 @@ Plugin 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'sheerun/vim-polyglot'
-Bundle 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
-Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/pep8'
-Bundle 'edthedev/minion'
 call vundle#end()            " required
 filetype plugin indent on
 
@@ -60,5 +57,7 @@ let g:airline_powerline_fonts = 1
 nnoremap <silent> <F9>  :!clear;!./% <CR>
 nnoremap <C-S-tab>      :tabprevious<CR>
 nnoremap <C-tab>        :tabnext<CR>
-nnoremap <C-Insert>     :tabnew<CR>
-nnoremap <C-Delete>     :tabclose<CR>
+nnoremap <C-t>          :tabnew<CR>
+nnoremap <C-q>          :tabclose<CR>
+nnoremap <F3>           :tabnext<CR>
+nnoremap <F4>           :tabprevious<CR>
