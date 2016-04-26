@@ -48,17 +48,17 @@ set splitbelow
 set splitright
 
 "" final stuff
-
 filetype plugin indent on
 syntax on
 let base16colorspace=256
-"" colorscheme base16-atelierdune
-"" set background=dark
-"" colorscheme base16-apathy 
 
 "" special config options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " special keymapping
-nnoremap <silent> <F9> :!clear;!./% <CR>
+nnoremap <silent> <F9>  :!clear;!./% <CR>
+nnoremap <C-S-tab>      :tabprevious<CR>
+nnoremap <C-tab>        :tabnext<CR>
+nnoremap <C-Insert>     :tabnew<CR>
+nnoremap <C-Delete>     :tabclose<CR>
