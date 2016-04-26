@@ -52,9 +52,9 @@ set splitright
 filetype plugin indent on
 syntax on
 let base16colorspace=256
-"" colorscheme base16-atelierdune
-"" set background=dark
-"" colorscheme base16-apathy 
+"" colorscheme solarized
+"" colorscheme base16-default
+set background=dark
 
 "" special config options
 let g:airline#extensions#tabline#enabled = 1

@@ -3,3 +3,4 @@
 modules/*/cache.zsh
 vim/bundle/*
 !vim/bundle/Vundle.vim
+vim/.netrwhist
