@@ -9,11 +9,8 @@ Plugin 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'sheerun/vim-polyglot'
-Bundle 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
-Bundle 'ervandew/supertab'
 Bundle 'vim-scripts/pep8'
-Bundle 'edthedev/minion'
 call vundle#end()            " required
 filetype plugin indent on
 
@@ -48,12 +45,9 @@ set splitbelow
 set splitright
 
 "" final stuff
-
 filetype plugin indent on
 syntax on
 let base16colorspace=256
-"" colorscheme solarized
-"" colorscheme base16-default
 set background=dark
 
 "" special config options
@@ -61,4 +55,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " special keymapping
-nnoremap <silent> <F9> :!clear;!./% <CR>
+nnoremap <silent> <F9>  :!clear;!./% <CR>
+nnoremap <C-S-tab>      :tabprevious<CR>
+nnoremap <C-tab>        :tabnext<CR>
+nnoremap <C-t>          :tabnew<CR>
+nnoremap <C-q>          :tabclose<CR>
+nnoremap <F3>           :tabnext<CR>
+nnoremap <F4>           :tabprevious<CR>
