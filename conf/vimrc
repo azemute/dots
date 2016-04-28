@@ -60,5 +60,5 @@ nnoremap <C-S-tab>      :tabprevious<CR>
 nnoremap <C-tab>        :tabnext<CR>
 nnoremap <C-t>          :tabnew<CR>
 nnoremap <C-q>          :tabclose<CR>
-nnoremap <F3>           :tabnext<CR>
-nnoremap <F4>           :tabprevious<CR>
+nnoremap <F4>           :tabnext<CR>
+nnoremap <F3>           :tabprevious<CR>
