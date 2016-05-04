@@ -6,11 +6,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-git'
-Bundle 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'jmcantrell/vim-virtualenv'
+"" Bundle 'sheerun/vim-polyglot'
 Plugin 'chriskempson/base16-vim'
-Bundle 'vim-scripts/pep8'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on
 
@@ -55,6 +57,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " special keymapping
+"" let mapleader = "\"
+
 nnoremap <silent> <F9>  :!clear;!./% <CR>
 nnoremap <C-S-tab>      :tabprevious<CR>
 nnoremap <C-tab>        :tabnext<CR>
