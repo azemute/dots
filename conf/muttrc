@@ -15,10 +15,18 @@ set sort_browser="reverse-date"
 set sort_aux="last-date-received"
 unset collapse_unread
 
+# use arrow keys to enter into messages 
 bind index - collapse-thread
 bind index _ collapse-all
 
+bind index <Right> display-message
+bind pager <Left> exit
+bind pager <Right> view-attachments
+bind attach <Left> exit
+bind attach <Right> view-attach
+bind pager b previous-page
 
+# vim like search commands
 bind index / search
 bind index ? search-reverse
 bind index n search-next
@@ -30,6 +38,14 @@ bind index G last-entry
 bind index r reply
 bind index a group-reply
 bind index L list-reply
+
+
+# magic GPG stuff
+set pgp_use_gpg_agent = yes
+set pgp_sign_as = 19DC8207  
+set pgp_timeout = 3600
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
 
 
 # custom body highlights -----------------------------------------------
