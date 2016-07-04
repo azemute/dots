@@ -16,7 +16,14 @@ fi
 VISUAL="vim"
 EDITOR="vim"
 
-PATH="$PATH:/home/zac/.gem/ruby/2.2.0/bin"
+# load system specific config (if it exists)
+if [[ -f ~/.profile ]]
+then
+    source ~/.profile
+fi
 
-
-cat ~/.motd
+# if a MOTD exists, use it
+if [[ -f ~/.motd ]]; 
+then
+    cat ~/.motd
+fi
